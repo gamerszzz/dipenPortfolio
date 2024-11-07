@@ -135,6 +135,7 @@ button{
     justify-content: flex-start;
 
     width: 40%;
+    min-width: 407px;
 
     
     z-index: 1;
@@ -488,6 +489,10 @@ button{
     width: 350px;
 }
 
+.photo{
+    transition: all 0.2s;
+}
+
 .photo img{
     width: 100%;
     height: 100%;
@@ -498,6 +503,7 @@ button{
 
 .photo:hover{
     cursor: pointer;
+    scale: 1.02;
 }
 
 .closingButton:hover{
@@ -519,9 +525,11 @@ button{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+
     img{
-        width: 50%;
-        height: auto;
+        width: auto;
+        max-height: 100vh;
+        
     }
 }
 
@@ -536,7 +544,50 @@ i.fa-solid.fa-xmark.closingButton.active{
     top: 20px;
     right: 20px;
 
-    font-size: 2rem;
+    font-size: 1.5rem;
 
     z-index: 2;
+
+
+    background-color: white;
+    color: black;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: 40px;
+    width: 40px;
+
+    border-radius: 50%;
+}
+
+
+
+@media(max-width: 1000px){
+    .mainPage{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        text-align: center;
+        margin-top: 100px;
+    }
+
+    .mainLeft{
+        width: 80%;
+        align-items: center;
+    }
+
+    .mainRight{
+        transform: scale(0.8);
+    }
+
+
+    .mainButtons{
+        align-self: center;
+    }
+
+
 }
