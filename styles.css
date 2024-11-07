@@ -532,7 +532,7 @@ i.fa-solid.fa-xmark.closingButton{
 
 i.fa-solid.fa-xmark.closingButton.active{
     display: block;
-    position: absolute;
+    position: fixed;
     top: 20px;
     right: 20px;
 
