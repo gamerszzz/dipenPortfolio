@@ -438,17 +438,43 @@ button{
     align-items: center;
     justify-content: center;
 
-
-    width: 95vw;
+    aspect-ratio: 16 / 9;
+    width: 85vw;
 
     padding-top: 100px;
 
     margin: 0 auto;
+
+    gap: 100px;
 }
 
-.videoElement{
-    width: auto;
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+
 }
+
+.videoTitle{
+    font-size: 2rem;
+
+    color: white;
+
+    margin-bottom: 20px;
+    
+}
+
+.video iframe{
+    width: 50%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border-radius: 10px;
+}
+
 
 
 
