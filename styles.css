@@ -394,6 +394,10 @@ button{
     overflow-x: hidden;
 }
 
+.mobileNav{
+    display: none;
+}
+
 .mainNav{
     display: flex;
     flex-direction: row;
@@ -664,11 +668,7 @@ a{
 .footerMid{
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: top;
-
     color: white;
-
     gap: 10px;
 }
 
@@ -818,20 +818,6 @@ form button{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     .footerBig{
         gap: 100px;
         padding: 100px;
@@ -841,6 +827,63 @@ form button{
 
 }
 
+
+
+@media(max-width: 768px){
+    .mainNav{
+        display: none;
+    }
+    .mobileNav{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+
+        width: 85%;
+
+        text-align: left;
+    }
+
+    .mainHeader{
+        height: 100vh;
+        width: 100%;
+        right: -105%;
+        position: fixed;
+
+        transition: all 2s;
+
+        z-index: 2;
+
+    }
+
+    .mainHeader.active{
+        right: 0;
+    }
+    .navOpen, .navClose{
+        position: absolute;
+        top: 30px;
+        right: 30px;
+        font-size: 1.5rem;
+        cursor: pointer;
+
+        transition: all 1s;
+
+        pointer-events: auto;
+
+
+    }
+
+
+    .navOpen{
+        color: white;
+    }
+
+    .navClose.active, .navOpen.active{
+        display: none;
+    }
+
+
+}
 
 
 
