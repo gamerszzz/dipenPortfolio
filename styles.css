@@ -41,7 +41,7 @@ button{
     font-weight: 100;
     letter-spacing: 3px;
 
-
+    padding: 0 10px;
     text-align: center;
 }
 
@@ -476,6 +476,8 @@ a{
     font-size: 3rem;
     text-align: center;
     padding-top: 50px;
+    
+    text-wrap: wrap;
 }
 
 .videoWrapper{
@@ -849,6 +851,9 @@ form button{
     .video{
         width: 90%;
     }
+    .videoWrapper{
+        padding: 75px;
+    }
 
 
 
@@ -969,8 +974,13 @@ form button{
         width: 100%;
     }
 
+    .videoWrapper{
+        padding: 50px;
+    }
+
     .filmsMain .mainTitle{
         font-size: 2.5rem;
+        padding-top: 60px;
     }
 
 
