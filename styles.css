@@ -243,7 +243,8 @@ button{
 
     background-color: var(--lightWhite);
     min-height: 150px;
-    padding: 20px;
+    padding: 30px;
+    padding-bottom: 50px;
 }
 
 .socialsContainer{
@@ -1076,7 +1077,7 @@ form button{
 
     .footerBig{
         width: 100%;
-        padding: 15px;
+        padding: 100px 15px;
     }
 
     .contactInputs{
