@@ -12,6 +12,10 @@ body{
     overflow-x: hidden;
 }
 
+body.no-scroll{
+    overflow: hidden;
+}
+
 
 :root{
     --lightWhite: #E0E0E0; 
@@ -386,6 +390,8 @@ button{
 
     display: flex;
     justify-content: center;
+
+    overflow-x: hidden;
 }
 
 .mainNav{
@@ -545,8 +551,12 @@ button{
     background-color: rgba(214, 214, 214, 0.9);
     position:fixed;
 
-    width: 100vw;
+
+
+    min-width: 100vw;
     min-height: 100vh;
+    max-height: 100vh;
+    width: auto;
 
     left: 0;
     top: 0;
@@ -555,12 +565,16 @@ button{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    
 
     img{
         width: auto;
-        max-height: 100vh;
+        max-height: 90vh;
+        max-width: 100vw;
         
     }
+    
+
 }
 
 
@@ -761,6 +775,13 @@ form button{
 
 
 @media(max-width: 1000px){
+
+    .quote{
+        padding-top: 30px;
+        padding-bottom: 0px;
+    }
+
+
     .mainPage{
         flex-direction: column;
         align-items: center;
@@ -843,6 +864,7 @@ form button{
 
     .mainRight{
         scale: 0.9;
+        margin-top: -50px;
     }
 
     .video{
@@ -886,7 +908,6 @@ form button{
 
 
 @media(max-width: 450px){
-
     .mainLeft h1 span::after{
         bottom: 15px;
     }
@@ -927,9 +948,13 @@ form button{
     }
 
 
-
+    .footerBig{
+        width: 100%;
+        padding: 15px;
+    }
 
     .contactInputs{
-        padding: 15px 10vw 15px 5px;
+        width: 100%;
+      
     }
 }
