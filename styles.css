@@ -398,6 +398,10 @@ button{
     display: none;
 }
 
+.navOpen::before{
+    display: none;
+}
+
 .mainNav{
     display: flex;
     flex-direction: row;
@@ -824,6 +828,10 @@ form button{
         justify-content: center;
     }
 
+    footer form{
+        width: clamp(200px, 70%, 70%);
+    }
+
 
 }
 
@@ -842,6 +850,11 @@ form button{
         width: 85%;
 
         text-align: left;
+
+        font-size: 1.2rem;
+    }
+    .nameNav{
+        font-size: 1.5rem;
     }
 
     .mainHeader{
@@ -872,9 +885,8 @@ form button{
 
 
     }
-
-
-    .navOpen{
+    .navOpen::before{
+        display: block;
         color: white;
     }
 

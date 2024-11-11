@@ -1,3 +1,4 @@
+
 const images = document.querySelectorAll(".photo");
 const xMark = document.querySelector(".closingButton")
 const body = document.querySelector("body");
@@ -15,16 +16,8 @@ images.forEach((image) => {
     });
 });
 
-xMark.addEventListener("click", () =>{
 
-    images.forEach((image) => {
-        image.classList.remove("active");
-    });
-    
-    xMark.classList.remove("active");
-    body.classList.remove("no-scroll");
 
-});
 
 
 const navClose = document.querySelector(".navClose");
@@ -50,7 +43,13 @@ navOpen.addEventListener("click", () =>{
 
 
 
+xMark.addEventListener("click", () =>{
 
+    images.forEach((image) => {
+        image.classList.remove("active");
+    });
+    
+    xMark.classList.remove("active");
+    body.classList.remove("no-scroll");
 
-
-
+});
