@@ -803,6 +803,9 @@ form button{
         width: 90%;
     }
 
+    .landingPage{
+        padding-bottom: 0px;
+    }
 
 
     .video{
@@ -925,11 +928,6 @@ form button{
 
     .mainLeft button{
        font-size: 4vw; 
-    }
-
-    .mainRight{
-        scale: 0.9;
-        margin-top: -50px;
     }
 
     .video{
