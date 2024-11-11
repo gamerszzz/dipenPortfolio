@@ -173,6 +173,8 @@ button{
     transition: all 0.3s;
 
     border-radius: 10px;
+
+    color: black;
 }
 
 .mainButtons button:hover{
@@ -680,6 +682,10 @@ footer form{
 
     color: white;
 
+}
+
+.contactPage-submit{
+    color: black;
 }
 
 .contactInputs{
