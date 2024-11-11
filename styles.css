@@ -887,7 +887,9 @@ form button{
         justify-content: space-around;
 
         width: 85%;
-        height: 90%;
+        height: 100%;
+
+        padding: 50px 0;
 
         text-align: center;
 
@@ -897,6 +899,9 @@ form button{
     }
     .nameNav{
         font-size: 1.5rem;
+        font-weight: 800;
+        letter-spacing: 1.15px;
+        margin-right: 0;
     }
 
     .mainHeader{
