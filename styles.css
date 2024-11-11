@@ -10,6 +10,7 @@
 
 html body{
     overflow-x: hidden !important;
+
 }
 
 body.no-scroll{
@@ -68,6 +69,7 @@ button{
     margin: 0 auto;
 
     max-width: 1400px;
+    padding-top: 50px;
 
 }
 
@@ -85,53 +87,7 @@ button{
 .mainImage{
     width: 100%;
     z-index: 2;
-}
-
-.haloImage{
-    position: absolute;
-    left: 0;
-    top: 50px;
-    width: 325px;
-    height: auto;
-    animation: subtleUpAndDown 3s linear infinite;
-    animation-direction:alternate-reverse;
-
-    transform-origin: center;
-}
-
-
-.assetImages{
-    position: absolute;
-    font-size: 4rem;
-
-    color: rgba(0, 170, 255,0.9);
-
-    animation: subtleUpAndDown 10s linear infinite;
-    animation-direction: alternate-reverse;
-
-}
-
-.fa-camera{
-    bottom: 180px;
-    left: 75px;
-
-
-
-}
-.fa-clapperboard{
-    top: 250px;
-    right: 100px;
-}
-
-
-
-@keyframes subtleUpAndDown{
-    0%{
-        transform: translateY(-20px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
+    padding-top: 50px;
 }
 
 
