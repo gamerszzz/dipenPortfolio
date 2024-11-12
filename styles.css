@@ -200,7 +200,6 @@ button{
 .mySocials{
 
     background-color: var(--lightWhite);
-    min-height: 150px;
     padding: 30px;
     padding-bottom: 50px;
 }
@@ -1006,12 +1005,26 @@ form button{
     }
 
     .mySocials{
-        padding: 5px;
+        padding: 20px 5px;
         text-wrap: wrap;
+    }
+    .mySocials h1{
+        font-size: 1rem;
     }
     .socialMedia i{
         padding-right: 2px;
     }
+
+    .mySocials a, .mySocials i{
+        font-size: 0.7rem;
+    }
+    .socialMedia{
+        padding-top: 20px;
+    }
+    .socialMedia a{
+        gap: 10px;
+    }
+
     
 
 
