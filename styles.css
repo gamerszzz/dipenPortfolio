@@ -879,7 +879,7 @@ form button{
         right: -105%;
         position: fixed;
 
-        transition: all 1.5s;
+        transition: all 2s ease-in-out;
 
         z-index: 2;
 
@@ -900,11 +900,9 @@ form button{
         font-size: 1.5rem;
         cursor: pointer;
 
-        transition: all 1s;
+        transition: all 1.5s;
 
         pointer-events: auto;
-
-
     }
     .navOpen::before{
         display: block;
@@ -913,6 +911,11 @@ form button{
 
     .navClose.active, .navOpen.active{
         display: none;
+    }
+
+
+    .mainRight{
+        width: 90%;
     }
 
 
@@ -960,7 +963,9 @@ form button{
 
 
 
-
+    .mainRight{
+        width: 95%;
+    }
 
 
 
