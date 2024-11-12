@@ -786,8 +786,11 @@ form button{
         justify-content: center;
 
         text-align: center;
-        margin-top: 50px;
     }
+    .mainRight{
+        width: 80%;
+    }
+
 
     .mainLeft{
         width: 80%;
@@ -991,17 +994,20 @@ form button{
         bottom: 15px;
     }
 
-    .mainRight{
-        scale: 0.7;
-    }
 
     .filmsMain .mainTitle{
         font-size: 2rem;
         padding-top: 70px;
     }
 
-
-
+    .mySocials{
+        padding: 5px;
+        text-wrap: wrap;
+    }
+    .socialMedia i{
+        padding-right: 2px;
+    }
+    
 
 
 
